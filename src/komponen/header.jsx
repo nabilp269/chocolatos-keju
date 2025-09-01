@@ -11,7 +11,7 @@ function Header() {
         <a href="#kontak">Kontak</a>
       </nav>
         <div className="user-info">
-        <span className="user-name">Naput</span>
+        <span className="user-name">chocolatos keju</span>
         <button className="logout-button">Logout</button>
       </div>
     </header>
