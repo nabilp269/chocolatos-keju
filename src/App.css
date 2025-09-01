@@ -1,3 +1,26 @@
+/* src/App.css */
+
+/* Pengaturan Dasar dan Variabel Warna */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+}
+
+/* Tata Letak Utama Aplikasi */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,59 +28,48 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.main-content {
+  padding: 2rem 0; /* Memberi jarak atas dan bawah untuk konten utama */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Bagian Hero (Judul Utama) */
+.hero-section h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.hero-section p {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 3rem; /* Jarak ke konten berikutnya */
 }
 
-.card {
-  padding: 2em;
+/* Bagian Daftar Siswa */
+.siswa-section h2 {
+  font-size: 2em;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
-.read-the-docs {
-  color: #888;
+.kartu-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Memberi jarak antar kartu */
+  flex-wrap: wrap; /* Agar kartu turun ke bawah jika layar sempit */
+  margin-top: 2rem;
+  margin-bottom: 3rem; /* Jarak ke konten berikutnya */
 }
 
-:root {
-  color: #fff;
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+/* Pengaturan Tautan Global */
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--primary-color);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
-} 
-
+  color: var(--primary-hover);
+}

@@ -1,23 +1,25 @@
+/* src/komponen/Header.css */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 32px;
-  background: #646cff;
+  padding: 1rem 2rem; /* Menggunakan rem untuk skala yang lebih baik */
+  background-color: #333; /* Warna sedikit lebih gelap untuk kontras */
   color: #fff;
   border-radius: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambah bayangan halus */
 }
 
 .site-name {
   font-size: 1.5em;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
 .nav-menu {
   display: flex;
-  gap: 28px;
+  gap: 1.5rem; /* Jarak antar menu */
 }
 
 .nav-menu a {
@@ -25,45 +27,33 @@
   text-decoration: none;
   font-size: 1em;
   font-weight: 500;
-  transition: background 0.2s;
-  padding: 4px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-menu a:hover {
-  background: rgba(255, 255, 255, 0.2);
+.nav-menu a:hover,
+.nav-menu a.active {
+  background-color: #646cff; /* Warna primer saat di-hover */
 }
 
 .user-info {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1rem;
 }
 
 .logout-button {
-  background: #0b0d3c;
+  background-color: #646cff;
   color: #fff;
   border: none;
-  padding: 8px 16px;
+  padding: 0.6rem 1.2rem;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.2s;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .logout-button:hover {
-  background: #b3b7ff;
-}
-
-main {
-  padding: 150px 150px 150px 150px;
-}
-
-main h1 {
-  font-size: 3em;
-  margin-bottom: 16px;
-}
-
-main p {
-  font-size: 1.5em;
-  color: #646cff;
+  background-color: #535bf2; /* Warna primer saat di-hover */
 }
