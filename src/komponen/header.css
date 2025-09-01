@@ -1,0 +1,69 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+  background: #646cff;
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.site-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background 0.2s;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.nav-menu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logout-button {
+  background: #0b0d3c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logout-button:hover {
+  background: #b3b7ff;
+}
+
+main {
+  padding: 150px 150px 150px 150px;
+}
+
+main h1 {
+  font-size: 3em;
+  margin-bottom: 16px;
+}
+
+main p {
+  font-size: 1.5em;
+  color: #646cff;
+}
